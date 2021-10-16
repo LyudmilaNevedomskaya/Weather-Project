@@ -31,7 +31,7 @@ app.post("/", (req, res) => {
       res.write(
         `<h1>The temperature in ${cityQuery} is ${temp} degrees Celcius</h1>`
       );
-      res.write(`<p>The weather is currently ${description}</p>`);
+      res.write(`<h2>The weather is currently ${description}</h2>`);
       res.write(`<img src="${imageUrl}" alt="weather icon">`);
       res.send();
     });
